@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dev Donald - Welcome!</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script>
+		function openPage(pageName, elmnt, color) {
+	    // Hide all elements with class="tabcontent" by default */
+	    var i, tabcontent, tablinks;
+	    tabcontent = document.getElementsByClassName("tabcontent");
+	    for (i = 0; i < tabcontent.length; i++) {
+	        tabcontent[i].style.display = "none";
+	    }
+
+	    // Remove the background color of all tablinks/buttons
+	    tablinks = document.getElementsByClassName("tablink");
+	    for (i = 0; i < tablinks.length; i++) {
+	        tablinks[i].style.backgroundColor = "";
+	    }
+
+	    // Show the specific tab content
+	    document.getElementById(pageName).style.display = "block";
+
+	    // Add the specific color to the button used to open the tab content
+	    elmnt.style.backgroundColor = color;
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+</head>
+<body>
+
+	<!--
+	This is where the navigation tabs code will be.
+	Will need to have the links necessary for traversing through the site.
+	*Home -> Relocates back to main page
+	*Projects -> GitHub Account
+	*About
+	*Contact Information
+	-->
+	<button class="tablink" onclick="openPage('Home', this, 'slategray')" id="defaultOpen">Home</button>
+	<button class="tablink" onclick="openPage('About', this, 'slategray')">About</button>
+	<button class="tablink" onclick="openPage('Contact', this, 'slategray')">Contact</button>
+	<button class="tablink" onclick="openPage('Projects', this, 'slategray')">Projects</button>
+
+	<!--Tab Content-->
+	<div id="Home" class="tabcontent" align="center">
+		<h1>Welcome to Dev Don's Webpage!</h1>
+		<img src="">
+	</div>
+
+	<div id="About" class="tabcontent">
+		<p>About</p>
+	</div>
+
+	<div id="Contact" class="tabcontent">
+		<p>Contact</p>
+	</div>
+
+	<div id="Projects" class="tabcontent">
+		<p>Projects</p>
+	</div>
+
+</body>
+</html>
