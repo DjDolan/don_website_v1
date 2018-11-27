@@ -6,11 +6,14 @@ body, html {
 	padding: 0;
 	overflow: visible;
 	font-family: arial;
-	background-color: #a6a6a6;
+	background-color: slategray;
 }
 
+strong { color: #ff260a; }
+
 .tablink {
-    background-color: #a6a6a6;
+    background-color: slategray;
+    border-radius: 6px;
     color: white;
     float: left;
     border: none;
@@ -34,8 +37,7 @@ body, html {
 }
 
 #Home, #Contact, #Projects {
-/*	background-color: #1a8cff;*/
-	background-image: linear-gradient(#1a8cff, #0655a5);
+	background-image: linear-gradient(#1a8cff, navy);
 	font-size: 30px;
 }
 
