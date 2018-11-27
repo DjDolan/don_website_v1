@@ -28,40 +28,46 @@
 
 		// Get the element with id="defaultOpen" and click on it
 		document.getElementById("defaultOpen").click();
-	</script>
+	</script>	
 </head>
 <body>
 
 	<!--
-	This is where the navigation tabs code will be.
-	Will need to have the links necessary for traversing through the site.
-	*Home -> Relocates back to main page
-	*Projects -> GitHub Account
-	*About
-	*Contact Information
+		This is where the navigation tabs code will be.
+		Will need to have the links necessary for traversing through the site.
+		*Home -> Relocates back to main page
+		*Projects -> GitHub Account
+		*Contact Information
 	-->
-	<button class="tablink" onclick="openPage('Home', this, 'slategray')" id="defaultOpen">Home</button>
-	<button class="tablink" onclick="openPage('About', this, 'slategray')">About</button>
-	<button class="tablink" onclick="openPage('Contact', this, 'slategray')">Contact</button>
-	<button class="tablink" onclick="openPage('Projects', this, 'slategray')">Projects</button>
+
+	<button class="tablink" onclick="openPage('Home', this, '#1a8cff')" id="defaultOpen">Home</button>
+	<button class="tablink" onclick="openPage('Contact', this, '#1a8cff')">Contact</button>
+	<button class="tablink" onclick="openPage('Projects', this, '#1a8cff')">Projects</button>
 
 	<!--Tab Content-->
-	<div id="Home" class="tabcontent" align="center">
-		<h1>Welcome to Dev Don's Webpage!</h1>
-		<img src="">
-	</div>
+	<div id="Home" class="tabcontent">
+		<h1 id="name">DONALD AGUINALDO | JUNIOR DEVELOPER</h1><br>
+		<hr>
+		<img id="profile_pic" src="profile-0.webp" alt="don_profile" height="500" width="700">
+		<p id="aboutme">Hello! My name is Donald Aguinaldo and I am an aspiring developer. I am currently attending <strong>University of Houston</strong> in pursuit of my bachelors degree in computer science. When I was a child I was always fascinated by computers and video games and what made them function. This lead me down this career path because computer science not only opens the door for many possibilties for future development of technology, but I also greatly enjoy the development process knowing that I am creating something that is benifitting the people and world around me. I am mainly pursuing web development because in college I was very intrigued by the internet and how it works and the machinations behind it. I personally learned HTML, CSS, and Javascript on my own through online courses to fulfill this purpose. In university I have learned the fundamentals of programming while studying languages such as C++, Java, and Python with greater focus on C++. I have established an understanding of how most languages' syntax should be structured and the basic principles that come with it. I am minoring in math because it is my strongest subject outside of computer science and its applications have benefitted me well in the past and will for the future. If you have any further questions or would like to get to know me more, the contact tab is listed above. Just give it a click!</p>
 
-	<div id="About" class="tabcontent">
-		<p>About</p>
+		<br><br><br>
+		<footer>Don and Co. © Copyright 2018, All Rights Reserved</footer>
 	</div>
 
 	<div id="Contact" class="tabcontent">
-		<p>Contact</p>
+		<!--Contact Information (email, phone, linkedin, etc.)-->
+		Email<br>
+		Phone<br>
+		LinkedIn<br>
+		Facebook<br>
+		Instagram<br>
+		Twitter<br>
+		Snapchat<br>
 	</div>
 
 	<div id="Projects" class="tabcontent">
 		<p>Projects</p>
 	</div>
-
 </body>
 </html>
