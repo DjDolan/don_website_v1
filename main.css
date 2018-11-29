@@ -1,7 +1,7 @@
 * { box-sizing: border-box; }
 
 body, html {
-	min-height: 100vh;
+	min-height: 100%;
 	margin: 0;
 	padding: 0;
 	overflow: visible;
@@ -13,7 +13,7 @@ strong { color: #ff260a; }
 
 .tablink {
     background-color: slategray;
-    border-radius: 6px;
+    border-radius: 5px;
     color: white;
     float: left;
     border: none;
@@ -21,12 +21,10 @@ strong { color: #ff260a; }
     cursor: pointer;
     padding: 14px 16px;
     font-size: 20px;
-    width: 33.33%;
+    width: 50%;
 }
 
-.tablink:hover {
-    background-color: orange;
-}
+.tablink:hover { background-color: orange; }
 
 .tabcontent {
     color: white;
@@ -48,26 +46,44 @@ strong { color: #ff260a; }
 
 hr {
 	color: white;
-	margin-bottom: 100px;
+	margin-bottom: 20px;
 	width: 75%;
 }
 
 #profile_pic {
-	padding: 10px 10px;
-	border-radius: 75%;
+	padding: 2px 2px;
+	margin-top: 20px;
+	margin-left: 250px;
+	border-radius: 10px;
 	border: 2px solid white;
 }
 
 #aboutme {
+	float: right;
 	font-size: 20px;
 	border: 2px solid white;
 	border-radius: 10px;
 	padding: 10px 10px;
-	margin: 100px;
+	margin-right: 250px;
+	margin-left: 0;
+	width: 40%;
+	text-align: left;
+}
+
+#contact {
+	float: left;
+	font-size: 20px;
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 10px 10px;
+	margin-left: 250px;
+	margin-right: 0;
+	width: 73.5%;
 	text-align: left;
 }
 
 footer {
+	margin-top: 100vh;
 	font-size: 12px;
 	display: block;
 	position: static;
